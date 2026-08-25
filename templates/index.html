@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Mapa Político 2026 — Descubra seu posicionamento{% endblock %}
+{% block content %}
+<div class="landing">
+  <div class="landing-card">
+    <div class="landing-emoji">🧭</div>
+    <h1>Qual é o seu Mapa Político?</h1>
+    <p class="landing-sub">
+      Um teste de posicionamento político pra <strong>Presidente da República</strong>, <strong>Governador</strong>
+      e <strong>Senador do Rio Grande do Sul</strong> em 2026.
+      Sem induzir resposta, sem rótulo simplista de "esquerda x direita" — e sem dizer em quem votar.
+    </p>
+
+    <div class="landing-steps">
+      <div class="step"><span>1</span> Escolha quais eleições você quer comparar</div>
+      <div class="step"><span>2</span> Responda ~20 perguntas objetivas, no seu ritmo</div>
+      <div class="step"><span>3</span> Diga o peso de cada pauta pra você</div>
+      <div class="step"><span>4</span> Veja seu mapa político e o ranking de cada eleição escolhida</div>
+    </div>
+
+    <a class="btn-primario" href="{{ url_for('quiz') }}">Começar o teste →</a>
+
+    <p class="landing-disclaimer">
+      ⚠️ Isto <strong>não é uma recomendação de voto</strong>. O resultado mostra apenas o quanto as posições
+      declaradas pelos candidatos se aproximam do que <em>você</em> respondeu. Dados de candidatos coletados de
+      fontes públicas (planos de governo, TSE/DivulgaCand e imprensa) e sujeitos a mudança até a eleição.
+      Nenhuma resposta é armazenada em servidor — tudo é calculado na hora.
+    </p>
+  </div>
+</div>
+{% endblock %}

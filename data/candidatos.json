@@ -1,0 +1,420 @@
+{
+  "atualizado_em": "2026-08-25",
+  "aviso": "Dados coletados de fontes públicas (planos de governo registrados, TSE/DivulgaCand e imprensa) em agosto de 2026, já com convenções e registros de candidatura encerrados. Podem mudar até a eleição (4 de outubro de 2026). Sempre que a posição de um candidato num tema não pôde ser confirmada com segurança, o campo 'score' fica nulo e isso é mostrado como 'Não foi possível determinar com segurança' — esses temas não entram no cálculo de compatibilidade daquele candidato.",
+  "candidatos": [
+    {
+      "id": "lula",
+      "numero": 13,
+      "nome": "Luiz Inácio Lula da Silva",
+      "vice": "Geraldo Alckmin (PSB)",
+      "partido": "PT",
+      "coligacao": "Federação Brasil da Esperança + aliados (coligação com 7 partidos)",
+      "status": "ativo",
+      "status_nota": "Candidatura à reeleição confirmada em convenção em 02/08/2026.",
+      "fontes": [
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7479764-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026-apos-confirmacao-de-lula-e-flavio-bolsonaro.html",
+        "https://jornalgrandebahia.com.br/2026/08/plano-de-governo-lula-alckmin-2027-2030-propoe-novo-pac-ministerio-da-seguranca-industria-verde-fortalecimento-do-sus-e-soberania-nacional/",
+        "https://www.congressoemfoco.com.br/artigo/119689/propostas-economicas-e-fiscais-dos-principais-candidatos-de-2026"
+      ],
+      "temas": {
+        "economia":           {"score": -2,  "confianca": "alta",  "nota": "Estímulo ao consumo, papel forte do Estado na economia, novo PAC."},
+        "impostos":           {"score": -1.5,"confianca": "alta",  "nota": "Isenção de IR até R$5 mil, mas defende reforma tributária ampla e tributação dos super-ricos."},
+        "privatizacoes":      {"score": -1.5,"confianca": "media", "nota": "Historicamente contrário a privatizações de estatais estratégicas."},
+        "estado":             {"score": 2,   "confianca": "alta",  "nota": "Novo PAC, novo Ministério da Segurança, ampliação de programas e presença estatal."},
+        "meio_ambiente":      {"score": 1,   "confianca": "media", "nota": "Fala em 'indústria verde' e transição ecológica, mas mantém abertura ao agronegócio."},
+        "politicas_sociais":  {"score": 2,   "confianca": "alta",  "nota": "Bolsa Família é bandeira histórica do governo e da campanha."},
+        "sus":                {"score": 2,   "confianca": "alta",  "nota": "Plano prevê fortalecimento do SUS e continuidade do 'Agora Tem Especialistas'."},
+        "educacao":           {"score": 1.5, "confianca": "alta",  "nota": "Continuidade do Pé-de-Meia e expansão da rede federal de ensino."},
+        "mulheres_familia":   {"score": 1.5, "confianca": "media", "nota": "Histórico de políticas voltadas a mulheres e programas sociais familiares."},
+        "aborto":             {"score": 0.5, "confianca": "baixa", "nota": "PT tem histórico favorável ao debate, mas o governo evita bandeira explícita de ampliação."},
+        "liberdade_individual":{"score": 1,  "confianca": "media", "nota": "Perfil progressista em costumes, sem agenda ofensiva no tema."},
+        "seguranca":          {"score": -1,  "confianca": "media", "nota": "Aposta em inteligência, integração de dados e 'asfixia financeira' das facções, mais que repressão pura."},
+        "armas":              {"score": -2,  "confianca": "alta",  "nota": "Mantém e reforça controle de armas e munições."},
+        "instituicoes":       {"score": 2,   "confianca": "alta",  "nota": "Defesa pública da independência do STF e das instituições."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma posição específica de 2026 sobre transparência/accountability."},
+        "polarizacao":        {"score": -1,  "confianca": "media", "nota": "Figura historicamente polarizadora, embora a campanha tenha discurso de 'legado' em vez de ataque direto."}
+      }
+    },
+    {
+      "id": "flavio_bolsonaro",
+      "numero": 22,
+      "nome": "Flávio Bolsonaro",
+      "vice": "Alfredo Gaspar (PL)",
+      "partido": "PL",
+      "coligacao": "Candidatura isolada, sem coligação formal",
+      "status": "ativo",
+      "status_nota": "Candidatura oficializada; concorre isolado, sem aliança formal com outros partidos.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-flash/leia-a-integra-do-plano-de-governo-de-flavio-bolsonaro/",
+        "https://www.portaltela.com/politica/2026/08/14/plano-de-governo-de-flavio-bolsonaro-tem-9-eixos-veja-propostas/",
+        "https://www.metropoles.com/brasil/plano-de-flavio-repete-ideias-de-bolsonaro-mas-radicaliza-com-stf-e-seguranca"
+      ],
+      "temas": {
+        "economia":           {"score": 1.5, "confianca": "media", "nota": "Critica carga tributária excessiva, defende reforma trabalhista e liberdade econômica."},
+        "impostos":           {"score": 2,   "confianca": "alta",  "nota": "Promete corte relevante de impostos, inclusive sobre combustíveis e energia."},
+        "privatizacoes":      {"score": 1.5, "confianca": "media", "nota": "Plano cita economia de mercado, desburocratização e privatizações."},
+        "estado":             {"score": -1.5,"confianca": "alta",  "nota": "Promete cortar ao menos 10 ministérios e reduzir a máquina pública."},
+        "meio_ambiente":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma posição específica."},
+        "politicas_sociais":  {"score": -0.5,"confianca": "baixa", "nota": "Não é bandeira central do plano; sem detalhamento específico encontrado."},
+        "sus":                {"score": -1,  "confianca": "baixa", "nota": "Sem detalhamento específico encontrado sobre o SUS no plano de 9 eixos."},
+        "educacao":           {"score": -0.5,"confianca": "baixa", "nota": "Sem detalhamento específico encontrado."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": -1.5,"confianca": "media", "nota": "Campo político historicamente alinhado a posições contrárias à ampliação do aborto."},
+        "liberdade_individual":{"score": -1, "confianca": "media", "nota": "Perfil conservador em costumes, alinhado ao bolsonarismo."},
+        "seguranca":          {"score": 2,   "confianca": "alta",  "nota": "Redução da maioridade penal, presídios federais de segurança máxima, 500 mil vagas prisionais, castração química."},
+        "armas":              {"score": 2,   "confianca": "alta",  "nota": "Promete reverter controles do governo Lula e facilitar regras para proprietários de armas."},
+        "instituicoes":       {"score": -2,  "confianca": "alta",  "nota": "Discurso mais duro contra o STF, defende reforma do Judiciário."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma posição específica de política de transparência."},
+        "polarizacao":        {"score": -2,  "confianca": "media", "nota": "Campanha construída em oposição direta ao campo petista, alinhamento com Javier Milei."}
+      }
+    },
+    {
+      "id": "caiado",
+      "numero": 55,
+      "nome": "Ronaldo Caiado",
+      "vice": "Gilberto Kassab (PSD)",
+      "partido": "PSD",
+      "coligacao": "Não determinado com segurança",
+      "status": "ativo",
+      "status_nota": "Ex-governador de Goiás, candidatura oficializada.",
+      "fontes": [
+        "https://www.congressoemfoco.com.br/noticia/121321/plano-de-caiado-mira-faccoes-ajuste-fiscal-e-fim-da-reeleicao",
+        "https://www.congressoemfoco.com.br/artigo/119689/propostas-economicas-e-fiscais-dos-principais-candidatos-de-2026"
+      ],
+      "temas": {
+        "economia":           {"score": 1,   "confianca": "media", "nota": "Postura de gestor pragmático, ataca o 'Custo-Brasil' e busca autonomia econômica/tecnológica."},
+        "impostos":           {"score": 0.5, "confianca": "media", "nota": "Defende ajuste fiscal sem 'aumentos sucessivos nem cortes generalizados' de impostos."},
+        "privatizacoes":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "estado":             {"score": -0.5,"confianca": "media", "nota": "Foco em ajuste fiscal e combate ao endividamento, mas sem plano de corte radical do Estado."},
+        "meio_ambiente":      {"score": -0.5,"confianca": "baixa", "nota": "Plano fala em exploração de minerais críticos como eixo econômico."},
+        "politicas_sociais":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "sus":                {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "educacao":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": -1,  "confianca": "baixa", "nota": "Perfil conservador tradicional; sem manifestação específica de 2026 encontrada."},
+        "liberdade_individual":{"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":          {"score": 2,   "confianca": "alta",  "nota": "Plano concentra grande parte das 100 páginas em segurança pública e combate a facções, com endurecimento penal."},
+        "armas":              {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": 0.5, "confianca": "media", "nota": "Propõe fim da reeleição presidencial; postura de conciliador entre poderes."},
+        "corrupcao":          {"score": 1,   "confianca": "media", "nota": "Defende fim da reeleição e discurso de gestão pragmática/fiscalização."},
+        "polarizacao":        {"score": 1,   "confianca": "media", "nota": "Se posiciona como candidato 'conciliador', defendeu inclusive anistia ampla, incluindo o ex-presidente Bolsonaro."}
+      }
+    },
+    {
+      "id": "zema",
+      "numero": 30,
+      "nome": "Romeu Zema",
+      "vice": "Eduardo Girão (Novo)",
+      "partido": "Novo",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Ex-governador de Minas Gerais, candidatura oficializada.",
+      "fontes": [
+        "https://www.congressoemfoco.com.br/artigo/119689/propostas-economicas-e-fiscais-dos-principais-candidatos-de-2026",
+        "https://en.wikipedia.org/wiki/Romeu_Zema"
+      ],
+      "temas": {
+        "economia":           {"score": 2,   "confianca": "alta",  "nota": "Partido Novo, liberal econômico clássico; defende abertura comercial e redução de tarifas de importação."},
+        "impostos":           {"score": 1.5, "confianca": "media", "nota": "Aposta em corte de gastos e 'combate a supersalários' para reduzir juros, ao invés de novos impostos."},
+        "privatizacoes":      {"score": 2,   "confianca": "alta",  "nota": "Promete privatizar estatais federais 'sem exceções', incluindo Petrobras, Caixa e Banco do Brasil."},
+        "estado":             {"score": -2,  "confianca": "alta",  "nota": "Maior ruptura estatal entre os candidatos: corte drástico de gastos e reforma previdenciária automática."},
+        "meio_ambiente":      {"score": -0.5,"confianca": "baixa", "nota": "Foco em abertura comercial pode reduzir peso da fiscalização ambiental; não confirmado especificamente."},
+        "politicas_sociais":  {"score": -1.5,"confianca": "media", "nota": "Linha liberal do Partido Novo tende a programas sociais mais enxutos e focalizados."},
+        "sus":                {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica."},
+        "educacao":           {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": -0.5,"confianca": "baixa", "nota": "Chapa mista: Zema mais liberal, vice Eduardo Girão publicamente contrário à ampliação do aborto."},
+        "liberdade_individual":{"score": 1.5,"confianca": "media", "nota": "Linha liberal-libertária do Partido Novo tende a menor intervenção estatal sobre a vida do indivíduo."},
+        "seguranca":          {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta detalhada."},
+        "armas":              {"score": 1,   "confianca": "baixa", "nota": "Partido Novo historicamente mais favorável à liberdade de posse de armas."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": 1,   "confianca": "baixa", "nota": "Discurso de eficiência e combate a privilégios ('supersalários')."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "renan_santos",
+      "numero": 14,
+      "nome": "Renan Santos",
+      "vice": "Coronel Aroldo Medina (Missão)",
+      "partido": "Missão",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Fundador do MBL (Movimento Brasil Livre), candidatura oficializada.",
+      "fontes": [
+        "https://www.congressoemfoco.com.br/artigo/119689/propostas-economicas-e-fiscais-dos-principais-candidatos-de-2026",
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7479764-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026-apos-confirmacao-de-lula-e-flavio-bolsonaro.html"
+      ],
+      "temas": {
+        "economia":           {"score": 2,   "confianca": "media", "nota": "Perfil liberal-conservador do MBL; defende corte de impostos como estímulo econômico."},
+        "impostos":           {"score": 2,   "confianca": "media", "nota": "Corte de impostos é proposta explícita de campanha."},
+        "privatizacoes":      {"score": 1.5, "confianca": "baixa", "nota": "Linha liberal tende a favorecer privatizações; sem detalhamento específico encontrado."},
+        "estado":             {"score": -2,  "confianca": "media", "nota": "Propõe reestruturação federativa profunda e fim de reajustes automáticos de benefícios."},
+        "meio_ambiente":      {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "politicas_sociais":  {"score": -1.5,"confianca": "baixa", "nota": "Defende transição da Previdência para sistema de capitalização, sinalizando modelo mais liberal."},
+        "sus":                {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "educacao":           {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": -1,  "confianca": "baixa", "nota": "Perfil conservador em costumes associado à base do MBL; não confirmado especificamente para 2026."},
+        "liberdade_individual":{"score": 0.5,"confianca": "baixa", "nota": "MBL tem histórico liberal em parte da pauta de costumes, mas base mais conservadora."},
+        "seguranca":          {"score": 1.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta detalhada."},
+        "armas":              {"score": 1.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": 1.5, "confianca": "media", "nota": "MBL nasceu de mobilizações anticorrupção ligadas à Lava Jato."},
+        "polarizacao":        {"score": -1,  "confianca": "baixa", "nota": "Histórico de forte enfrentamento ao campo petista desde a fundação do MBL."}
+      }
+    },
+    {
+      "id": "cury",
+      "numero": 70,
+      "nome": "Augusto Cury",
+      "vice": "Júlio Delgado (Avante)",
+      "partido": "Avante",
+      "coligacao": "Não determinado com segurança",
+      "status": "ativo",
+      "status_nota": "Escritor e psiquiatra, primeira candidatura eletiva, oficializada em 03/08/2026.",
+      "fontes": [
+        "https://www.congressoemfoco.com.br/noticia/121272/augusto-cury-propoe-semipresidencialismo-e-mandato-de-8-anos-no-stf",
+        "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/8/17/augusto-cury-defende-semipresidencialismo-escola-em-tempo-integral-e-mudancas-no-stf"
+      ],
+      "temas": {
+        "economia":           {"score": 0,   "confianca": "media", "nota": "Plano fala em déficit público próximo de zero e estímulo ao empreendedorismo, sem radicalizar de um lado."},
+        "impostos":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "privatizacoes":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "estado":             {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma posição clara sobre tamanho do Estado."},
+        "meio_ambiente":      {"score": 1,   "confianca": "baixa", "nota": "Plano de 200 páginas cita meio ambiente entre os 18 projetos estruturais, sem detalhe confirmado."},
+        "politicas_sociais":  {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "sus":                {"score": 1.5, "confianca": "alta",  "nota": "Propõe reformulação estrutural do atendimento psicológico/psiquiátrico no SUS e clínicas de prevenção à depressão."},
+        "educacao":           {"score": 2,   "confianca": "alta",  "nota": "Bandeira central: inclusão obrigatória de gestão emocional no currículo e escola em tempo integral."},
+        "mulheres_familia":   {"score": 1,   "confianca": "media", "nota": "Propõe que ao menos 3 das 9 vagas do STF sejam ocupadas por mulheres."},
+        "aborto":             {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "liberdade_individual":{"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "armas":              {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": 1.5, "confianca": "alta",  "nota": "Propõe semipresidencialismo, mandato de 8 anos para ministros do STF e fim da reeleição presidencial."},
+        "corrupcao":          {"score": 1,   "confianca": "baixa", "nota": "Reformas institucionais propostas sugerem preocupação com accountability, sem plano específico anticorrupção confirmado."},
+        "polarizacao":        {"score": 2,   "confianca": "alta",  "nota": "Bandeira central da campanha é o combate à polarização e a 'pacificação de conflitos'."}
+      }
+    },
+    {
+      "id": "hertz_dias",
+      "numero": 16,
+      "nome": "Hertz Dias",
+      "vice": "Vanessa Portugal (PSTU)",
+      "partido": "PSTU",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Professor da rede pública no Maranhão, rapper e ativista; candidatura oficializada em 31/07/2026.",
+      "fontes": [
+        "https://corporisbrasil.com.br/quem-sao-os-candidatos-de-esquerda-a-presidencia-nas-eleicoes-de-2026/",
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7485634-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026.html"
+      ],
+      "temas": {
+        "economia":           {"score": -2, "confianca": "alta", "nota": "PSTU é partido trotskista, defende economia planificada e ruptura com o capitalismo."},
+        "impostos":           {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: taxar grandes fortunas e capital financeiro."},
+        "privatizacoes":      {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: estatização, não privatização."},
+        "estado":             {"score": 2,  "confianca": "media", "nota": "Defende Estado fortemente presente na economia e nos serviços."},
+        "meio_ambiente":      {"score": 1.5,"confianca": "baixa", "nota": "Linha histórica de esquerda socialista tende a pautas ambientais fortes; não confirmado especificamente para 2026."},
+        "politicas_sociais":  {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: ampliação forte de programas sociais e direitos trabalhistas."},
+        "sus":                {"score": 2,  "confianca": "media", "nota": "Defesa histórica de SUS 100% público, sem espaço para privado."},
+        "educacao":           {"score": 2,  "confianca": "media", "nota": "Defesa histórica de educação pública, gratuita e 100% estatal."},
+        "mulheres_familia":   {"score": 2,  "confianca": "media", "nota": "Pautas feministas são historicamente centrais na plataforma do PSTU."},
+        "aborto":             {"score": 2,  "confianca": "media", "nota": "PSTU defende historicamente a legalização total do aborto."},
+        "liberdade_individual":{"score": 2, "confianca": "media", "nota": "Linha histórica de defesa ampla de liberdades individuais e de costumes."},
+        "seguranca":          {"score": -1, "confianca": "baixa", "nota": "Linha histórica critica encarceramento em massa e violência policial."},
+        "armas":              {"score": -1, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica de 2026."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança — o PSTU tradicionalmente questiona as instituições do Estado burguês como um todo, o que não se encaixa bem na escala Executivo x STF."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "edmilson_costa",
+      "numero": 21,
+      "nome": "Edmilson Costa",
+      "vice": "Cleusa Santos (PCB)",
+      "partido": "PCB",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Pré-candidatura anunciada em fevereiro de 2026, oficializada em convenção.",
+      "fontes": [
+        "https://corporisbrasil.com.br/quem-sao-os-candidatos-de-esquerda-a-presidencia-nas-eleicoes-de-2026/"
+      ],
+      "temas": {
+        "economia":           {"score": -2, "confianca": "alta", "nota": "Defende nacionalização do sistema financeiro e re-estatização de empresas."},
+        "impostos":           {"score": -2, "confianca": "media", "nota": "Linha histórica do PCB: taxar grandes fortunas."},
+        "privatizacoes":      {"score": -2, "confianca": "alta", "nota": "Propõe re-estatização de empresas privatizadas."},
+        "estado":             {"score": 2,  "confianca": "alta", "nota": "Propõe suspensão do pagamento da dívida pública e Estado fortemente presente na economia."},
+        "meio_ambiente":      {"score": 1.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica."},
+        "politicas_sociais":  {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: ampliação de direitos sociais e trabalhistas."},
+        "sus":                {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: defesa de saúde pública universal."},
+        "educacao":           {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: defesa de educação pública universal."},
+        "mulheres_familia":   {"score": 2,  "confianca": "baixa", "nota": "Linha histórica de esquerda socialista tende a políticas fortes para mulheres."},
+        "aborto":             {"score": 2,  "confianca": "media", "nota": "Linha histórica do PCB é favorável à legalização do aborto."},
+        "liberdade_individual":{"score": 2, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica para 2026."},
+        "seguranca":          {"score": -1, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "armas":              {"score": -1, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "samara_martins",
+      "numero": 80,
+      "nome": "Samara Martins",
+      "vice": "Raquel Brício (UP)",
+      "partido": "UP (Unidade Popular)",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Dentista, já foi candidata a vice em 2022; chapa 100% feminina, oficializada em convenção.",
+      "fontes": [
+        "https://corporisbrasil.com.br/quem-sao-os-candidatos-de-esquerda-a-presidencia-nas-eleicoes-de-2026/",
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7485634-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026.html"
+      ],
+      "temas": {
+        "economia":           {"score": -2, "confianca": "alta", "nota": "Plataforma socialista, defende maior presença do Estado na economia."},
+        "impostos":           {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: redistribuição de renda via tributação dos mais ricos."},
+        "privatizacoes":      {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: contrária a privatizações."},
+        "estado":             {"score": 2,  "confianca": "alta", "nota": "Defesa explícita de maior presença do Estado na economia e expansão de serviços públicos."},
+        "meio_ambiente":      {"score": 1.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica."},
+        "politicas_sociais":  {"score": 2,  "confianca": "alta", "nota": "Bandeira central: redistribuição de renda e expansão de serviços públicos."},
+        "sus":                {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: SUS 100% público."},
+        "educacao":           {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: educação pública universal."},
+        "mulheres_familia":   {"score": 2,  "confianca": "alta", "nota": "Chapa 100% feminina; pauta de mulheres é central na campanha."},
+        "aborto":             {"score": 2,  "confianca": "media", "nota": "UP tem histórico de defesa da legalização do aborto."},
+        "liberdade_individual":{"score": 2, "confianca": "media", "nota": "Linha histórica de esquerda socialista favorável a liberdades individuais amplas."},
+        "seguranca":          {"score": -1.5,"confianca": "baixa", "nota": "Linha histórica critica encarceramento em massa."},
+        "armas":              {"score": -1.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "rui_costa_pimenta",
+      "numero": 29,
+      "nome": "Rui Costa Pimenta",
+      "vice": "Antônio Carlos Silva (PCO)",
+      "partido": "PCO",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Quinta candidatura presidencial de Rui Costa Pimenta (também concorreu em 2002, 2010, 2014 e 2018).",
+      "fontes": [
+        "https://corporisbrasil.com.br/quem-sao-os-candidatos-de-esquerda-a-presidencia-nas-eleicoes-de-2026/"
+      ],
+      "temas": {
+        "economia":           {"score": -2, "confianca": "alta", "nota": "Partido trotskista radical, crítico do sistema financeiro e da política econômica vigente."},
+        "impostos":           {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: taxar grandes fortunas e capital."},
+        "privatizacoes":      {"score": -2, "confianca": "media", "nota": "Linha histórica do partido: contrária a privatizações."},
+        "estado":             {"score": 1.5,"confianca": "baixa", "nota": "PCO defende forte presença estatal na economia, embora critique as instituições do 'Estado burguês'."},
+        "meio_ambiente":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "politicas_sociais":  {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: ampliação de direitos sociais e trabalhistas."},
+        "sus":                {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: defesa de saúde pública universal."},
+        "educacao":           {"score": 2,  "confianca": "media", "nota": "Linha histórica do partido: defesa de educação pública universal."},
+        "mulheres_familia":   {"score": 1.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica para 2026."},
+        "aborto":             {"score": 2,  "confianca": "media", "nota": "Linha histórica do PCO é favorável à legalização do aborto."},
+        "liberdade_individual":{"score": 2, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta específica para 2026."},
+        "seguranca":          {"score": -1, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "armas":              {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança — PCO defende ruptura com as instituições do 'Estado burguês', o que não se encaixa bem na escala Executivo x STF."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "clariana_barao",
+      "numero": 27,
+      "nome": "Clariana Barão",
+      "vice": "Fabiana Torquato (DC)",
+      "partido": "DC (Democracia Cristã)",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Advogada, chapa 100% feminina; DC não conseguiu viabilizar nomes como Aldo Rebelo ou Joaquim Barbosa antes de lançar a chapa.",
+      "fontes": [
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7479764-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026-apos-confirmacao-de-lula-e-flavio-bolsonaro.html"
+      ],
+      "temas": {
+        "economia":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "impostos":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "privatizacoes":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "estado":             {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "meio_ambiente":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "politicas_sociais":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "sus":                {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "educacao":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": -1, "confianca": "baixa", "nota": "Partido de base cristã-conservadora; tende a políticas de família mais tradicionais, não confirmado especificamente."},
+        "aborto":             {"score": -2, "confianca": "media", "nota": "Democracia Cristã tem histórico de forte oposição à ampliação do aborto."},
+        "liberdade_individual":{"score": -1.5,"confianca": "media", "nota": "Partido de base cristã-conservadora, tende a posições mais restritivas em costumes."},
+        "seguranca":          {"score": 1,  "confianca": "baixa", "nota": "Partidos conservadores tradicionalmente adotam linha mais dura em segurança; não confirmado especificamente."},
+        "armas":              {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "wilson_grassi",
+      "numero": 35,
+      "nome": "Wilson Grassi Júnior",
+      "vice": "Suêd Haidar (Democrata)",
+      "partido": "Democrata (ex-Partido da Mulher Brasileira)",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Médico-veterinário, atuação histórica ligada à defesa e proteção animal; nunca eleito para os cargos a que já concorreu.",
+      "fontes": [
+        "https://www.correiobraziliense.com.br/mundo/2026/08/7479764-quem-sao-os-candidatos-a-presidencia-na-eleicao-2026-apos-confirmacao-de-lula-e-flavio-bolsonaro.html"
+      ],
+      "temas": {
+        "economia":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "impostos":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "privatizacoes":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "estado":             {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "meio_ambiente":      {"score": 1,  "confianca": "baixa", "nota": "Atuação histórica em defesa e proteção animal sugere pauta ambiental, mas sem plano de governo específico confirmado."},
+        "politicas_sociais":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "sus":                {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "educacao":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "liberdade_individual":{"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "armas":              {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "marcal",
+      "numero": 28,
+      "nome": "Pablo Marçal",
+      "vice": "Leonardo Avalanche (PRTB)",
+      "partido": "PRTB",
+      "coligacao": "Candidatura isolada",
+      "status": "inelegivel_sub_judice",
+      "status_nota": "ATENÇÃO: segundo o TSE, Pablo Marçal está inelegível até 2032 em razão de condenação relativa à campanha de 2024 à Prefeitura de São Paulo. O PRTB havia lançado originalmente Leonardo Avalanche como candidato a presidente, mas a Executiva Nacional do partido aprovou sua saída para dar lugar a Marçal, que agora concorre com Avalanche como vice. A situação é sub judice e pode mudar por decisão da Justiça Eleitoral até a eleição.",
+      "fontes": [
+        "https://www.barchart.com/story/news/32245246/brazils-rising-conservative-force-leonardo-avalanche-leads-the-rights-resurgence",
+        "https://pt.wikipedia.org/wiki/Elei%C3%A7%C3%A3o_presidencial_no_Brasil_em_2026"
+      ],
+      "temas": {
+        "economia":           {"score": 2,   "confianca": "media", "nota": "Discurso liberal e de empreendedorismo, alinhado ao campo de direita econômica."},
+        "impostos":           {"score": 1.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança uma proposta detalhada."},
+        "privatizacoes":      {"score": 1.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "estado":             {"score": -1.5,"confianca": "baixa", "nota": "Discurso liberal tende a Estado mais enxuto; não confirmado em detalhe."},
+        "meio_ambiente":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "politicas_sociais":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "sus":                {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "educacao":           {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "mulheres_familia":   {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "aborto":             {"score": -1.5,"confianca": "media", "nota": "Discurso público conservador, contrário à ampliação do aborto."},
+        "liberdade_individual":{"score": -1,"confianca": "baixa", "nota": "Discurso conservador em costumes, com viés liberal em economia."},
+        "seguranca":          {"score": 2,   "confianca": "media", "nota": "Discurso recorrente de linha dura contra criminalidade."},
+        "armas":              {"score": 1.5, "confianca": "baixa", "nota": "Discurso alinhado ao campo pró-armas, sem plano detalhado confirmado."},
+        "instituicoes":       {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "corrupcao":          {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "polarizacao":        {"score": -2,  "confianca": "baixa", "nota": "Discurso público historicamente agressivo contra adversários políticos."}
+      }
+    }
+  ]
+}

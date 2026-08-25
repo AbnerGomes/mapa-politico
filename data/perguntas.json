@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1, "tema": "economia",
+    "texto": "Pra economia crescer, o que te parece mais eficiente: o governo baixar impostos e burocracia pra empresa contratar mais, ou o próprio governo investir pesado em obras e programas pra gerar emprego direto?",
+    "opcoes": [
+      {"id": "a", "texto": "Reduzir impostos e burocracia, e deixar o mercado puxar o crescimento", "delta": 2},
+      {"id": "b", "texto": "Um pouco dos dois, mas com mais peso pro setor privado", "delta": 1},
+      {"id": "c", "texto": "Um pouco dos dois, mas com mais peso pro investimento público", "delta": -1},
+      {"id": "d", "texto": "O governo investindo direto é mais eficaz pra gerar emprego rápido", "delta": -2}
+    ]
+  },
+  {
+    "id": 2, "tema": "impostos", "tema_secundario": "estado", "peso_secundario": 0.5,
+    "texto": "Sobre o tamanho dos impostos no Brasil hoje, qual frase mais combina com você?",
+    "opcoes": [
+      {"id": "a", "texto": "Estão altos demais e atrapalham quem produz — precisam cair, mesmo que corte algum serviço público", "delta": 2, "delta_secundario": -1},
+      {"id": "b", "texto": "Estão altos, mas o problema maior é como são cobrados (injusto com quem ganha pouco) — precisa reformar, não necessariamente reduzir", "delta": 0, "delta_secundario": 0},
+      {"id": "c", "texto": "O nível está ok, o problema é a corrupção e o desperdício do que já é arrecadado", "delta": -1, "delta_secundario": 0},
+      {"id": "d", "texto": "Precisam aumentar pra sustentar mais serviços públicos", "delta": -2, "delta_secundario": 1}
+    ]
+  },
+  {
+    "id": 3, "tema": "impostos", "tema_secundario": "economia", "peso_secundario": 0.5,
+    "texto": "Hoje quem ganha por salário paga, proporcionalmente, mais imposto de renda do que quem ganha via lucros e dividendos de empresa. O que você acha disso?",
+    "opcoes": [
+      {"id": "a", "texto": "Faz sentido taxar mais quem tem mais, incluindo dividendos e grandes fortunas", "delta": -2, "delta_secundario": -1},
+      {"id": "b", "texto": "Pode rever um pouco, mas com cuidado pra não afugentar investimento", "delta": -1, "delta_secundario": 0},
+      {"id": "c", "texto": "Prefiro manter como está — mexer nisso desestimula quem gera emprego", "delta": 1, "delta_secundario": 1},
+      {"id": "d", "texto": "Imposto sobre lucro e dividendo deveria ser ainda mais baixo, pra atrair investimento", "delta": 2, "delta_secundario": 2}
+    ]
+  },
+  {
+    "id": 4, "tema": "estado",
+    "texto": "Um prefeito fictício pode reduzir o número de secretarias e cargos pra economizar, ou manter/ampliar a máquina pública pra oferecer mais serviços direto à população. Você ficaria mais do lado de qual opção?",
+    "opcoes": [
+      {"id": "a", "texto": "Cortar bastante — o Estado gasta demais com máquina", "delta": -2},
+      {"id": "b", "texto": "Cortar moderadamente, só o que é claramente desperdício", "delta": -1},
+      {"id": "c", "texto": "Manter, focando em melhorar a gestão sem cortar", "delta": 1},
+      {"id": "d", "texto": "Ampliar — mais serviço público direto resolve mais problemas", "delta": 2}
+    ]
+  },
+  {
+    "id": 5, "tema": "privatizacoes", "tema_secundario": "economia", "peso_secundario": 0.5,
+    "texto": "Sobre estatais como Correios, Petrobras ou bancos públicos, qual frase mais representa sua opinião?",
+    "opcoes": [
+      {"id": "a", "texto": "Devem ser privatizadas — o Estado não deveria administrar empresas", "delta": 2, "delta_secundario": 1},
+      {"id": "b", "texto": "Pode privatizar caso a caso, quando o serviço melhora e nada estratégico se perde", "delta": 0, "delta_secundario": 0},
+      {"id": "c", "texto": "Só privatizaria em situações bem específicas — prefiro manter sob controle público", "delta": -1, "delta_secundario": 0},
+      {"id": "d", "texto": "Devem continuar públicas — são estratégicas pro país", "delta": -2, "delta_secundario": -1}
+    ]
+  },
+  {
+    "id": 6, "tema": "politicas_sociais",
+    "texto": "Sobre programas como o Bolsa Família, que pagam um valor mensal pra famílias de baixa renda, o que você acha?",
+    "opcoes": [
+      {"id": "a", "texto": "É essencial, sem isso muita gente cai na miséria — pode até ampliar", "delta": 2},
+      {"id": "b", "texto": "É importante, mas precisa de mais contrapartida (estudo, vacina, trabalho) e fiscalização rígida", "delta": 1},
+      {"id": "c", "texto": "Deveria ser bem mais enxuto e temporário, só pra emergência", "delta": -1},
+      {"id": "d", "texto": "Prefiro que o dinheiro público vá pra gerar emprego, não transferência direta", "delta": -2}
+    ]
+  },
+  {
+    "id": 7, "tema": "sus",
+    "texto": "Pensando no SUS, que hoje atende a maioria dos brasileiros, o que você prioriza?",
+    "opcoes": [
+      {"id": "a", "texto": "Investir pesado pra universalizar e melhorar o SUS pra todo mundo", "delta": 2},
+      {"id": "b", "texto": "Melhorar o SUS, mas incentivando parcerias com hospitais/planos privados pra aliviar a fila", "delta": 1},
+      {"id": "c", "texto": "O Estado deveria garantir um SUS básico forte, e quem pode pagar plano privado que pague", "delta": -1},
+      {"id": "d", "texto": "Saúde funciona melhor com mais participação privada, inclusive subsidiando plano de saúde", "delta": -2}
+    ]
+  },
+  {
+    "id": 8, "tema": "educacao",
+    "texto": "Sobre a educação pública e os professores, qual frase combina mais com você?",
+    "opcoes": [
+      {"id": "a", "texto": "Professor precisa ganhar muito mais e ter carreira valorizada — é a prioridade máxima de investimento", "delta": 2},
+      {"id": "b", "texto": "Precisa melhorar salário e formação, junto com cobrança de resultado e avaliação", "delta": 1},
+      {"id": "c", "texto": "O problema não é só dinheiro, é gestão — prefiro mais autonomia da escola e participação privada", "delta": -1},
+      {"id": "d", "texto": "Educação funciona melhor com mais escolha da família (vale-escola, cívico-militar) do que só mais dinheiro pro sistema tradicional", "delta": -2}
+    ]
+  },
+  {
+    "id": 9, "tema": "seguranca",
+    "texto": "Imagine um bairro com bastante violência. Qual estratégia te parece mais eficaz no longo prazo?",
+    "opcoes": [
+      {"id": "a", "texto": "Investir pesado em polícia, presídio e punição mais dura — prioridade é conter o crime na marra", "delta": 2},
+      {"id": "b", "texto": "Equilibrar: polícia mais presente e equipada, mas também investigação e inteligência", "delta": 1},
+      {"id": "c", "texto": "Equilibrar, com peso maior em prevenção: emprego, educação e esporte pro jovem não entrar no crime", "delta": -1},
+      {"id": "d", "texto": "O foco deveria ser prevenção social — segurança começa em oportunidade, não em repressão", "delta": -2}
+    ]
+  },
+  {
+    "id": 10, "tema": "armas",
+    "texto": "Sobre o cidadão comum ter e portar arma de fogo pra defesa própria, o que você acha?",
+    "opcoes": [
+      {"id": "a", "texto": "Deveria ser bem mais fácil comprar e portar — é direito de legítima defesa", "delta": 2},
+      {"id": "b", "texto": "Pode ser mais fácil, mas com regras rígidas de controle, curso e rastreamento", "delta": 1},
+      {"id": "c", "texto": "Prefiro regras bem restritivas, com poucas exceções", "delta": -1},
+      {"id": "d", "texto": "Quanto menos arma circulando, mais segura a sociedade — regras bem apertadas", "delta": -2}
+    ]
+  },
+  {
+    "id": 11, "tema": "aborto",
+    "texto": "Hoje o aborto só é permitido no Brasil em poucos casos (risco de vida, estupro, anencefalia). O que você acha disso?",
+    "opcoes": [
+      {"id": "a", "texto": "Deveria ser direito da mulher decidir, com acesso garantido pelo SUS", "delta": 2},
+      {"id": "b", "texto": "Manter como está hoje, talvez ampliar um pouco as exceções, sem virar regra geral", "delta": 1},
+      {"id": "c", "texto": "Manter só as exceções que já existem, sem ampliar", "delta": -1},
+      {"id": "d", "texto": "Deveria ser proibido em quase todos os casos — defendo a vida desde a concepção", "delta": -2}
+    ]
+  },
+  {
+    "id": 12, "tema": "liberdade_individual",
+    "texto": "Sobre a escola pública ensinar educação sexual e orientar sobre contracepção, o que você acha?",
+    "opcoes": [
+      {"id": "a", "texto": "Sim — é papel do Estado prevenir gravidez na adolescência e DSTs", "delta": 2},
+      {"id": "b", "texto": "Sim, mas com participação e aviso prévio aos pais", "delta": 1},
+      {"id": "c", "texto": "Prefiro que isso fique mais a cargo da família do que da escola", "delta": -1},
+      {"id": "d", "texto": "A escola não deveria tratar desse assunto — é papel exclusivo da família", "delta": -2}
+    ]
+  },
+  {
+    "id": 13, "tema": "mulheres_familia",
+    "texto": "Sobre políticas específicas pra mulheres (licença-maternidade mais longa, creche gratuita, lei contra violência doméstica reforçada), o que você acha?",
+    "opcoes": [
+      {"id": "a", "texto": "O Estado deveria investir bem mais nisso — é prioridade", "delta": 2},
+      {"id": "b", "texto": "Sim, mas de forma equilibrada com outras prioridades do orçamento", "delta": 1},
+      {"id": "c", "texto": "Já existe bastante política nessa área, não vejo como prioridade aumentar agora", "delta": -1},
+      {"id": "d", "texto": "Prefiro políticas que atendam a família como um todo, não recortadas por gênero", "delta": -2}
+    ]
+  },
+  {
+    "id": 14, "tema": "corrupcao",
+    "texto": "Um político do 'seu lado' é acusado de desvio de dinheiro, mas 'faz muito' pela cidade. O que você tende a fazer?",
+    "opcoes": [
+      {"id": "a", "texto": "Cobro igual cobraria do lado oposto — erro é erro, não importa de quem", "delta": 2},
+      {"id": "b", "texto": "Cobro investigação séria, mas espero o processo terminar antes de 'condenar'", "delta": 1},
+      {"id": "c", "texto": "Levo em conta o contexto e o que ele entregou antes de decidir minha posição", "delta": 0},
+      {"id": "d", "texto": "O resultado importa mais — corrupção é ruim, mas se a gestão é boa eu relevo", "delta": -1}
+    ]
+  },
+  {
+    "id": 15, "tema": "meio_ambiente",
+    "texto": "Sobre desmatamento, mineração e agronegócio em áreas sensíveis como a Amazônia, o que você acha?",
+    "opcoes": [
+      {"id": "a", "texto": "A fiscalização deveria ser bem mais rígida, mesmo que atrase alguns negócios", "delta": 2},
+      {"id": "b", "texto": "Equilíbrio: fiscalização real, mas sem travar demais a economia local", "delta": 1},
+      {"id": "c", "texto": "O foco deveria ser dar alternativa econômica antes de fiscalizar duro", "delta": -1},
+      {"id": "d", "texto": "A prioridade deveria ser o desenvolvimento econômico — o ambiental não pode travar produção", "delta": -2}
+    ]
+  },
+  {
+    "id": 16, "tema": "instituicoes",
+    "texto": "Sobre as brigas recentes entre Presidente, Congresso e STF, qual posição mais combina com você?",
+    "opcoes": [
+      {"id": "a", "texto": "O STF tem se intrometido demais — decisões deveriam ficar mais com quem foi eleito", "delta": -2},
+      {"id": "b", "texto": "Cada poder tem sua função e deve fiscalizar o outro — é assim que deve ser, mesmo com atrito", "delta": 0},
+      {"id": "c", "texto": "Depende da situação — controle é bom, mas sem paralisar quem foi eleito pra governar", "delta": 1},
+      {"id": "d", "texto": "Precisamos de instituições fortes e independentes, mesmo que decidam contra a maioria às vezes", "delta": 2}
+    ]
+  },
+  {
+    "id": 17, "tema": "polarizacao",
+    "texto": "Quando um político do 'seu lado' erra feio, o que você tende a fazer?",
+    "opcoes": [
+      {"id": "a", "texto": "Cobro igual cobraria do lado oposto — erro é erro, não importa de quem", "delta": 2},
+      {"id": "b", "texto": "Cobro, mas com mais compreensão do que cobraria do lado oposto", "delta": 1},
+      {"id": "c", "texto": "Fico mais em silêncio — prefiro não dar munição pro 'outro lado'", "delta": -1},
+      {"id": "d", "texto": "Defendo — o outro lado é pior e não merece meu ataque público", "delta": -2}
+    ]
+  },
+  {
+    "id": 18, "tema": "estado", "tema_secundario": "impostos", "peso_secundario": 0.5,
+    "texto": "Se o governo tiver que escolher entre cumprir uma meta fiscal rígida (economizando) ou gastar mais agora pra estimular a economia mesmo aumentando a dívida, você ficaria do lado de qual opção?",
+    "opcoes": [
+      {"id": "a", "texto": "Cumprir a meta fiscal, mesmo doendo no curto prazo", "delta": -1, "delta_secundario": 0.5},
+      {"id": "b", "texto": "Um meio-termo, com metas flexíveis conforme o cenário", "delta": 0, "delta_secundario": 0},
+      {"id": "c", "texto": "Priorizar o estímulo agora, e ajustar as contas depois", "delta": 1, "delta_secundario": 0},
+      {"id": "d", "texto": "Gastar o quanto for preciso agora — a dívida se resolve com crescimento futuro", "delta": 2, "delta_secundario": -0.5}
+    ]
+  },
+  {
+    "id": 19, "tema": "economia", "tema_secundario": "estado", "peso_secundario": 0.6,
+    "texto": "Se você tivesse que escolher só um caminho pro Brasil dar certo, qual soaria mais certo pra você?",
+    "opcoes": [
+      {"id": "a", "texto": "Mais liberdade econômica: menos Estado, menos regra, deixa o mercado e o indivíduo se virarem", "delta": 2, "delta_secundario": -2},
+      {"id": "b", "texto": "Um meio-termo pragmático: liberdade com uma rede de proteção decente", "delta": 0, "delta_secundario": 0},
+      {"id": "c", "texto": "Mais proteção social: Estado forte garantindo direitos básicos, mesmo limitando um pouco a liberdade econômica", "delta": -1, "delta_secundario": 1},
+      {"id": "d", "texto": "Estado bem presente e ativo, guiando a economia e protegendo quem precisa", "delta": -2, "delta_secundario": 2}
+    ]
+  },
+  {
+    "id": 20, "tema": "seguranca",
+    "texto": "Sobre o combate ao tráfico e ao crime organizado, o que te parece mais eficaz?",
+    "opcoes": [
+      {"id": "a", "texto": "Descriminalizar o uso de drogas e concentrar a força no combate ao esquema financeiro das facções", "delta": -1},
+      {"id": "b", "texto": "Manter a proibição, mas separar bem usuário de traficante na lei, com foco em inteligência financeira", "delta": 0},
+      {"id": "c", "texto": "Endurecer a lei de drogas também pro usuário — tolerância zero", "delta": 1},
+      {"id": "d", "texto": "Guerra total: mais força policial e mais pena pra tráfico e uso", "delta": 2}
+    ]
+  }
+]

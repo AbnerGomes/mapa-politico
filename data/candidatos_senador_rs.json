@@ -1,0 +1,233 @@
+{
+  "cargo": "Senador pelo Rio Grande do Sul",
+  "atualizado_em": "2026-08-25",
+  "aviso": "Perfil resumido (6 eixos, não os 16 temas detalhados do teste de Presidente), coletado de fontes públicas (TSE, imprensa, trajetória política) em agosto de 2026. O RS elege 2 das 3 vagas de Senador em 2026 — cada eleitor vota em 2 nomes diferentes, sem 2º turno; são eleitos os 2 mais votados. Onde a posição de um candidato não pôde ser confirmada com segurança, o score fica nulo.",
+  "candidatos": [
+    {
+      "id": "manuela_davila",
+      "nome": "Manuela d'Ávila",
+      "partido": "PSOL",
+      "status": "ativo",
+      "status_nota": "Ex-deputada federal e estadual, foi candidata a vice-presidente em 2018 (chapa de Fernando Haddad) e a presidente em 2014 pelo PCdoB; liderava as pesquisas em agosto/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/manuela-davila-lidera-disputa-pelo-senado-no-rs/",
+        "https://www.portaltela.com/politica/2026/08/25/van-hattem-e-manuela-davila-empatam-na-disputa-pelo-senado-no-rs/"
+      ],
+      "eixos": {
+        "economia":      {"score": -1.5,"confianca": "alta",  "nota": "Trajetória consistente na esquerda (PCdoB, depois PSOL), defesa histórica de políticas redistributivas."},
+        "estado":        {"score": 1.5, "confianca": "media", "nota": "Histórico de defesa de Estado social forte."},
+        "social":        {"score": 2,   "confianca": "alta",  "nota": "Pauta social e de direitos humanos é central em toda sua trajetória política."},
+        "costumes":      {"score": 2,   "confianca": "alta",  "nota": "Uma das vozes mais conhecidas do feminismo na política brasileira; posições liberais em costumes."},
+        "seguranca":      {"score": -1.5,"confianca": "media", "nota": "Histórico crítico ao encarceramento em massa e à violência policial."},
+        "instituicoes":  {"score": 1.5, "confianca": "media", "nota": "Historicamente crítica ao bolsonarismo e defensora da independência do STF."}
+      }
+    },
+    {
+      "id": "van_hattem",
+      "nome": "Marcel Van Hattem",
+      "partido": "Novo",
+      "status": "ativo",
+      "status_nota": "Deputado federal desde 2019; em empate técnico com Manuela d'Ávila nas pesquisas de agosto/2026.",
+      "fontes": [
+        "https://www.portaltela.com/politica/2026/08/25/van-hattem-e-manuela-davila-empatam-na-disputa-pelo-senado-no-rs/",
+        "https://agenciagbc.com/2026/08/21/manuela-davila-pesquisa-senado-rs-marcel-van-hattem/"
+      ],
+      "eixos": {
+        "economia":      {"score": 2,   "confianca": "alta",  "nota": "Partido Novo, liberal econômico clássico, voto consistente pró-mercado na Câmara."},
+        "estado":        {"score": -2,  "confianca": "alta",  "nota": "Defende Estado mínimo, bandeira central do Partido Novo."},
+        "social":        {"score": -1.5,"confianca": "media", "nota": "Linha liberal tende a programas sociais mais enxutos e focalizados."},
+        "costumes":      {"score": -0.5,"confianca": "baixa", "nota": "Partido Novo é liberal em tese, mas Van Hattem tem atuação alinhada ao campo bolsonarista em pautas de costumes."},
+        "seguranca":      {"score": 1,   "confianca": "baixa", "nota": "Defensor conhecido do direito a posse/porte de armas."},
+        "instituicoes":  {"score": -2,  "confianca": "media", "nota": "Um dos parlamentares mais vocais em críticas ao STF na Câmara."}
+      }
+    },
+    {
+      "id": "rigotto",
+      "nome": "Germano Rigotto",
+      "partido": "MDB",
+      "status": "ativo",
+      "status_nota": "Ex-governador do RS (2003-2006); em empate técnico pela 2ª vaga nas pesquisas de agosto/2026.",
+      "fontes": [
+        "https://www.portaltela.com/politica/2026/08/25/van-hattem-e-manuela-davila-empatam-na-disputa-pelo-senado-no-rs/"
+      ],
+      "eixos": {
+        "economia":      {"score": 0.5, "confianca": "baixa", "nota": "MDB, linha de centro pragmático; sem posições recentes detalhadas confirmadas."},
+        "estado":        {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": -0.5,"confianca": "baixa", "nota": "Perfil de centro tradicional, sem manifestações públicas fortes encontradas."},
+        "seguranca":      {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "paulo_pimenta",
+      "nome": "Paulo Pimenta",
+      "partido": "PT",
+      "status": "ativo",
+      "status_nota": "Deputado federal e ex-ministro da Secretaria de Comunicação Social do governo Lula; empatado pela 2ª vaga nas pesquisas de agosto/2026.",
+      "fontes": [
+        "https://www.portaltela.com/politica/2026/08/25/van-hattem-e-manuela-davila-empatam-na-disputa-pelo-senado-no-rs/"
+      ],
+      "eixos": {
+        "economia":      {"score": -1.5,"confianca": "alta",  "nota": "Quadro histórico do PT, ex-ministro do governo Lula."},
+        "estado":        {"score": 1.5, "confianca": "alta",  "nota": "Linha do PT de Estado social forte e presente."},
+        "social":        {"score": 1.5, "confianca": "alta",  "nota": "Defesa histórica de programas sociais e SUS, alinhada à linha do PT."},
+        "costumes":      {"score": 1,   "confianca": "media", "nota": "Perfil progressista alinhado à linha do PT em costumes."},
+        "seguranca":      {"score": -1,  "confianca": "media", "nota": "Linha do PT tende a priorizar inteligência e prevenção sobre repressão pura."},
+        "instituicoes":  {"score": 1.5, "confianca": "media", "nota": "Defesa pública consistente da independência do STF e das instituições."}
+      }
+    },
+    {
+      "id": "frederico_antunes",
+      "nome": "Frederico Antunes",
+      "partido": "PSD",
+      "status": "ativo",
+      "status_nota": "Engenheiro, deputado estadual/federal desde 1998.",
+      "fontes": [
+        "https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"
+      ],
+      "eixos": {
+        "economia":      {"score": 1,   "confianca": "baixa", "nota": "Longa trajetória no centrão/bancada ruralista, historicamente pró-agronegócio."},
+        "estado":        {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": -1,  "confianca": "baixa", "nota": "Perfil da bancada ruralista tende a posições mais conservadoras."},
+        "seguranca":      {"score": 1,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "sanderson",
+      "nome": "Ubiratan Sanderson",
+      "partido": "PL",
+      "status": "ativo",
+      "status_nota": "Deputado federal, ex-policial federal.",
+      "fontes": [
+        "https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"
+      ],
+      "eixos": {
+        "economia":      {"score": 1,   "confianca": "baixa", "nota": "Campo bolsonarista, alinhado a liberalismo econômico moderado."},
+        "estado":        {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": -1.5,"confianca": "media", "nota": "Perfil conservador do campo bolsonarista, ex-policial federal."},
+        "seguranca":      {"score": 2,   "confianca": "media", "nota": "Origem na Polícia Federal e discurso do campo bolsonarista associado a linha dura."},
+        "instituicoes":  {"score": -1.5,"confianca": "baixa", "nota": "Campo político historicamente crítico do STF."}
+      }
+    },
+    {
+      "id": "milton_cardoso",
+      "nome": "Milton Cardoso",
+      "partido": "PSDB",
+      "status": "ativo",
+      "status_nota": "Jornalista, primeira candidatura eletiva.",
+      "fontes": [
+        "https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"
+      ],
+      "eixos": {
+        "economia":      {"score": 0.5, "confianca": "baixa", "nota": "PSDB, linha liberal clássica de centro-direita."},
+        "estado":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "renato_jaguarao",
+      "nome": "Renato Jaguarão",
+      "partido": "Cidadania",
+      "status": "ativo",
+      "status_nota": "Administrador e poeta.",
+      "fontes": [
+        "https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"
+      ],
+      "eixos": {
+        "economia":      {"score": -0.5,"confianca": "baixa", "nota": "Cidadania, linha histórica de centro-esquerda social-democrata."},
+        "estado":        {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":      {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "daniela_maidana",
+      "nome": "Daniela Maidana da Silva",
+      "partido": "PSTU",
+      "status": "ativo",
+      "status_nota": "Advogada e ativista.",
+      "fontes": ["https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"],
+      "eixos": {
+        "economia": {"score": -2, "confianca": "media", "nota": "PSTU, linha trotskista."},
+        "estado": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: Estado fortemente presente."},
+        "social": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: serviços públicos universais."},
+        "costumes": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: liberdades individuais amplas."},
+        "seguranca": {"score": -1, "confianca": "baixa", "nota": "Linha histórica crítica à violência policial."},
+        "instituicoes": {"score": null, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "regis_ethur",
+      "nome": "Regis Ethur",
+      "partido": "PSTU",
+      "status": "ativo",
+      "status_nota": "Professor de ensino médio, dirigente sindical.",
+      "fontes": ["https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"],
+      "eixos": {
+        "economia": {"score": -2, "confianca": "media", "nota": "PSTU, linha trotskista."},
+        "estado": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: Estado fortemente presente."},
+        "social": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: serviços públicos universais."},
+        "costumes": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: liberdades individuais amplas."},
+        "seguranca": {"score": -1, "confianca": "baixa", "nota": "Linha histórica crítica à violência policial."},
+        "instituicoes": {"score": null, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "ricardo_jones",
+      "nome": "Ricardo Herbert Jones",
+      "partido": "PCO",
+      "status": "ativo",
+      "status_nota": "Médico.",
+      "fontes": ["https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"],
+      "eixos": {
+        "economia": {"score": -2, "confianca": "media", "nota": "PCO, linha trotskista radical."},
+        "estado": {"score": 1.5, "confianca": "baixa", "nota": "Linha histórica do partido de forte presença estatal na economia."},
+        "social": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: educação e saúde públicas universais."},
+        "costumes": {"score": 2, "confianca": "baixa", "nota": "Linha histórica de esquerda radical, favorável a liberdades amplas."},
+        "seguranca": {"score": -1, "confianca": "baixa", "nota": "Linha histórica crítica ao encarceramento em massa."},
+        "instituicoes": {"score": null, "confianca": "baixa", "nota": "Não foi possível determinar com segurança — PCO defende ruptura com as instituições do 'Estado burguês'."}
+      }
+    },
+    {
+      "id": "luciano_schafer",
+      "nome": "Luciano Schafer",
+      "partido": "UP",
+      "status": "ativo",
+      "status_nota": "Ativista do movimento de moradia.",
+      "fontes": ["https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"],
+      "eixos": {
+        "economia": {"score": -2, "confianca": "media", "nota": "UP (Unidade Popular), linha socialista."},
+        "estado": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: forte presença estatal."},
+        "social": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: redistribuição de renda; ativista de movimento de moradia."},
+        "costumes": {"score": 2, "confianca": "baixa", "nota": "Linha histórica do partido: liberdades individuais amplas."},
+        "seguranca": {"score": -1.5, "confianca": "baixa", "nota": "Linha histórica crítica ao encarceramento em massa."},
+        "instituicoes": {"score": null, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "tania_peres",
+      "nome": "Tania Peres",
+      "partido": "UP",
+      "status": "ativo",
+      "status_nota": "Servidora federal e bióloga.",
+      "fontes": ["https://www.nsctotal.com.br/politica/eleicoes-2026-candidatos-senado-rs"],
+      "eixos": {
+        "economia": {"score": -2, "confianca": "media", "nota": "UP (Unidade Popular), linha socialista."},
+        "estado": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: forte presença estatal."},
+        "social": {"score": 2, "confianca": "media", "nota": "Linha histórica do partido: redistribuição de renda e serviços públicos."},
+        "costumes": {"score": 2, "confianca": "baixa", "nota": "Linha histórica do partido: liberdades individuais amplas."},
+        "seguranca": {"score": -1.5, "confianca": "baixa", "nota": "Linha histórica crítica ao encarceramento em massa."},
+        "instituicoes": {"score": null, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Teste — Mapa Político 2026{% endblock %}
+{% block content %}
+<div class="app-shell">
+
+  <header class="topbar">
+    <a href="{{ url_for('index') }}" class="logo">🧭 Mapa Político 2026</a>
+    <div class="progress-wrap" id="progress-wrap" hidden>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <span class="progress-label" id="progress-label"></span>
+    </div>
+  </header>
+
+  <main id="app-main">
+    <div class="loading" id="loading">Carregando perguntas…</div>
+  </main>
+
+</div>
+
+<script id="tpl-outros" type="text/x-template">
+  <div class="outros-box" hidden>
+    <textarea placeholder="Escreva sua opção com suas palavras…" maxlength="500"></textarea>
+  </div>
+</script>
+
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}

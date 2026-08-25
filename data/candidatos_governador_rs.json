@@ -1,0 +1,143 @@
+{
+  "cargo": "Governador do Rio Grande do Sul",
+  "atualizado_em": "2026-08-25",
+  "aviso": "Perfil resumido (6 eixos, não os 16 temas detalhados do teste de Presidente), coletado de fontes públicas (TSE, planos de governo, imprensa) em agosto de 2026, após o encerramento do registro de candidaturas (15/08/2026). Pode mudar até a eleição (4 de outubro de 2026, com 2º turno em 25/10 se necessário). Onde a posição de um candidato não pôde ser confirmada com segurança, o score fica nulo.",
+  "candidatos": [
+    {
+      "id": "brizola",
+      "nome": "Juliana Brizola",
+      "partido": "PDT",
+      "coligacao": "PDT, PSB, Avante, PT, PC do B, PV, PSOL, Rede",
+      "status": "ativo",
+      "status_nota": "Neta de Leonel Brizola, ex-deputada estadual; liderava as pesquisas em empate técnico com Zucco em julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/",
+        "https://ndmais.com.br/politica/quem-e-luciano-zucco/",
+        "https://www.brasildefato.com.br/2026/08/24/plano-de-governo-propoe-conselho-estadual-de-comunicacao-do-rs-e-fortalecimento-das-emissoras-publicas/"
+      ],
+      "eixos": {
+        "economia":      {"score": -1,  "confianca": "media", "nota": "PDT, trabalhismo histórico, coligação ampla com PT/PSOL/PC do B."},
+        "estado":        {"score": 1,   "confianca": "media", "nota": "Coligação de centro-esquerda tende a Estado mais presente."},
+        "social":        {"score": 1.5, "confianca": "media", "nota": "Plano de governo destaca educação e comunicação pública; coligação com PT/PSOL reforça pauta social."},
+        "costumes":      {"score": 0.5, "confianca": "baixa", "nota": "Sem manifestação específica encontrada; PDT historicamente moderado em costumes."},
+        "seguranca":      {"score": 0,   "confianca": "media", "nota": "Diz ter especialização em segurança pública, mas plano equilibra prevenção e educação, sem discurso de linha dura."},
+        "instituicoes":  {"score": 1,   "confianca": "baixa", "nota": "Plano de governo enfatiza transparência e combate à desinformação."}
+      }
+    },
+    {
+      "id": "zucco",
+      "nome": "Luciano Zucco",
+      "partido": "PL",
+      "coligacao": "Não determinado com segurança",
+      "status": "ativo",
+      "status_nota": "Deputado federal, 27 anos de carreira no Exército; um dos principais nomes do campo bolsonarista no RS. TRE-RS chegou a intimar a campanha para apresentar o plano de governo.",
+      "fontes": [
+        "https://ndmais.com.br/politica/quem-e-luciano-zucco/",
+        "https://ndmais.com.br/politica/tre-rs-intima-campanha-de-zucco-para-apresentacao-de-plano-de-governo-em-ate-72h/"
+      ],
+      "eixos": {
+        "economia":      {"score": 1.5, "confianca": "media", "nota": "Campo bolsonarista, alinhado a liberalismo econômico."},
+        "estado":        {"score": -1,  "confianca": "baixa", "nota": "Não foi possível determinar com segurança um plano detalhado."},
+        "social":        {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": -1.5,"confianca": "media", "nota": "Perfil conservador do campo bolsonarista."},
+        "seguranca":      {"score": 2,   "confianca": "media", "nota": "Formação militar de 27 anos e discurso do campo bolsonarista associado a linha dura em segurança."},
+        "instituicoes":  {"score": -1.5,"confianca": "baixa", "nota": "Campo político historicamente crítico do STF."}
+      }
+    },
+    {
+      "id": "gabriel_souza",
+      "nome": "Gabriel Souza",
+      "partido": "MDB",
+      "coligacao": "Não determinado com segurança",
+      "status": "ativo",
+      "status_nota": "Cerca de 6% nas pesquisas de julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/"
+      ],
+      "eixos": {
+        "economia":      {"score": 0.5, "confianca": "baixa", "nota": "MDB, linha de centro pragmático; sem plano detalhado confirmado."},
+        "estado":        {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":      {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "maranata",
+      "nome": "Marcelo Maranata",
+      "partido": "PSDB",
+      "coligacao": "Não determinado com segurança",
+      "status": "ativo",
+      "status_nota": "Cerca de 3% nas pesquisas de julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/"
+      ],
+      "eixos": {
+        "economia":      {"score": 1,   "confianca": "baixa", "nota": "PSDB, linha liberal clássica de centro-direita."},
+        "estado":        {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "social":        {"score": -0.5,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "costumes":      {"score": 0,   "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "seguranca":      {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."},
+        "instituicoes":  {"score": 0.5, "confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "cesar_pontes",
+      "nome": "Cesar Pontes",
+      "partido": "PCO",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Cerca de 1% nas pesquisas de julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/"
+      ],
+      "eixos": {
+        "economia":      {"score": -2,  "confianca": "media", "nota": "PCO, linha trotskista radical, crítica ao sistema financeiro."},
+        "estado":        {"score": 1.5, "confianca": "baixa", "nota": "Linha histórica do partido de forte presença estatal na economia."},
+        "social":        {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: educação e saúde públicas universais."},
+        "costumes":      {"score": 2,   "confianca": "baixa", "nota": "Linha histórica de esquerda radical, favorável a liberdades amplas."},
+        "seguranca":      {"score": -1,  "confianca": "baixa", "nota": "Linha histórica crítica ao encarceramento em massa."},
+        "instituicoes":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança — PCO defende ruptura com as instituições do 'Estado burguês'."}
+      }
+    },
+    {
+      "id": "rejane_oliveira",
+      "nome": "Rejane de Oliveira",
+      "partido": "PSTU",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Cerca de 1% nas pesquisas de julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/"
+      ],
+      "eixos": {
+        "economia":      {"score": -2,  "confianca": "media", "nota": "PSTU, linha trotskista, defende economia planificada."},
+        "estado":        {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: Estado fortemente presente."},
+        "social":        {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: serviços públicos universais."},
+        "costumes":      {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: liberdades individuais amplas."},
+        "seguranca":      {"score": -1,  "confianca": "baixa", "nota": "Linha histórica crítica à violência policial."},
+        "instituicoes":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    },
+    {
+      "id": "priscila_voigt",
+      "nome": "Priscila Voigt",
+      "partido": "UP",
+      "coligacao": "Candidatura isolada",
+      "status": "ativo",
+      "status_nota": "Sem suporte mensurável nas pesquisas de julho/2026.",
+      "fontes": [
+        "https://www.poder360.com.br/poder-eleicoes-2026/saiba-quem-sao-os-candidatos-ao-governo-do-rio-grande-do-sul-em-2026/"
+      ],
+      "eixos": {
+        "economia":      {"score": -2,  "confianca": "media", "nota": "UP (Unidade Popular), linha socialista."},
+        "estado":        {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: forte presença estatal."},
+        "social":        {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: redistribuição de renda e serviços públicos."},
+        "costumes":      {"score": 2,   "confianca": "media", "nota": "Linha histórica do partido: pauta feminista forte."},
+        "seguranca":      {"score": -1.5,"confianca": "baixa", "nota": "Linha histórica crítica ao encarceramento em massa."},
+        "instituicoes":  {"score": null,"confianca": "baixa", "nota": "Não foi possível determinar com segurança."}
+      }
+    }
+  ]
+}
