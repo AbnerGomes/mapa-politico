@@ -10,3 +10,9 @@ services:
         sync: false
       - key: CLAUDE_MODEL_HAIKU
         value: claude-haiku-4-5
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM
+        sync: false
+      - key: ADMIN_EMAIL
+        value: abwgomes@gmail.com

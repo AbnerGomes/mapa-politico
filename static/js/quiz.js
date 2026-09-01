@@ -29,6 +29,8 @@
   };
 
   const state = {
+    nome: sessionStorage.getItem("mp_nome") || "",
+    email: sessionStorage.getItem("mp_email") || "",
     perguntas: [],
     temas: [],
     temasPorId: {},
@@ -56,6 +58,10 @@
   }
 
   async function init() {
+    if (!state.nome || !state.email) {
+      window.location.href = "/";
+      return;
+    }
     try {
       const res = await fetch("/api/perguntas");
       const data = await res.json();
@@ -261,6 +267,8 @@
           respostas: state.respostas,
           prioridades: state.prioridades,
           cargos: state.cargosSelecionados,
+          nome: state.nome,
+          email: state.email,
         }),
       });
       const data = await res.json();
@@ -487,10 +495,46 @@
         ${cargosHtml}
 
         <div class="footer-acoes">
+          <button type="button" class="btn-primario" id="btn-baixar-pdf">⬇️ Baixar PDF do resultado</button>
           <a class="btn-secundario" href="/">Refazer o teste</a>
         </div>
       </div>
     `;
+
+    document.getElementById("btn-baixar-pdf").addEventListener("click", (ev) => baixarPdf(ev.currentTarget, data));
+  }
+
+  async function baixarPdf(botao, data) {
+    const textoOriginal = botao.textContent;
+    botao.disabled = true;
+    botao.textContent = "Gerando PDF…";
+    try {
+      const res = await fetch("/api/resultado/pdf", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nome: state.nome,
+          narrativa: data.narrativa,
+          macros: data.macros,
+          cargos: data.cargos,
+        }),
+      });
+      if (!res.ok) throw new Error("Falha ao gerar PDF");
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "mapa-politico-2026.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      alert("Não foi possível gerar o PDF agora. Tenta de novo em alguns segundos.");
+    } finally {
+      botao.disabled = false;
+      botao.textContent = textoOriginal;
+    }
   }
 
   init();

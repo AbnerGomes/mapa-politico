@@ -1,9 +1,11 @@
 import json
 import os
+import re
+from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, Response, jsonify, render_template, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from engine.scoring import calcular_perfil, calcular_macros, MACRO_LABELS, MACROS
@@ -12,6 +14,11 @@ from engine.compatibility import (
     montar_ranking_macro, teste_robustez_macro,
 )
 from engine.llm import classificar_resposta_livre, gerar_narrativa
+from engine.pdf import gerar_pdf_resultado
+from engine.email_service import enviar_email
+
+EMAIL_REGEX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL") or os.environ.get("GMAIL_USER") or "abwgomes@gmail.com"
 
 load_dotenv()
 
@@ -102,6 +109,8 @@ def api_resultado():
     prioridades = payload.get("prioridades", {})
     cargos_selecionados = payload.get("cargos") or ["presidente"]
     cargos_selecionados = [c for c in cargos_selecionados if c in CARGOS] or ["presidente"]
+    nome = (payload.get("nome") or "").strip()[:120]
+    email = (payload.get("email") or "").strip()[:200]
 
     # classifica respostas "Outros" via LLM (delta numérico no eixo do tema primário)
     perguntas_por_id = {p["id"]: p for p in PERGUNTAS}
@@ -155,6 +164,24 @@ def api_resultado():
     }
     narrativa = gerar_narrativa(perfil, macros, TEMAS, prioridades_labels)
 
+    # notifica o administrador do projeto com quem respondeu — melhor esforço,
+    # uma falha aqui nunca pode derrubar o resultado que a pessoa vê na tela.
+    if nome and email and EMAIL_REGEX.match(email):
+        agora = datetime.now().strftime("%d/%m/%Y às %H:%M")
+        try:
+            pdf_bytes = gerar_pdf_resultado(nome, narrativa, macros, resultados_por_cargo)
+            enviar_email(
+                destinatario=ADMIN_EMAIL,
+                assunto="🧭 Novo teste respondido — Mapa Político 2026",
+                corpo_texto=(
+                    f"Nome: {nome}\nE-mail: {email}\nData/hora: {agora}\n"
+                    f"Cargos comparados: {', '.join(cargos_selecionados)}"
+                ),
+                anexos=[{"filename": "mapa-politico-2026.pdf", "content": pdf_bytes}],
+            )
+        except Exception as e:
+            print("Erro ao gerar/enviar notificação ao administrador:", e)
+
     return jsonify({
         "perfil": perfil,
         "macros": macros,
@@ -163,6 +190,24 @@ def api_resultado():
         "temas": TEMAS,
         "cargos": resultados_por_cargo,
     })
+
+
+@app.route("/api/resultado/pdf", methods=["POST"])
+def api_resultado_pdf():
+    """Gera o PDF a partir do resultado que a pessoa já viu na tela (não recalcula
+    nada — a narrativa é IA e recalcular geraria um texto diferente do exibido)."""
+    payload = request.get_json(force=True, silent=True) or {}
+    nome = (payload.get("nome") or "").strip()[:120] or "seu"
+    narrativa = payload.get("narrativa") or {}
+    macros = payload.get("macros") or {}
+    cargos = payload.get("cargos") or {}
+
+    pdf_bytes = gerar_pdf_resultado(nome, narrativa, macros, cargos)
+    return Response(
+        pdf_bytes,
+        mimetype="application/pdf",
+        headers={"Content-Disposition": 'attachment; filename="mapa-politico-2026.pdf"'},
+    )
 
 
 if __name__ == "__main__":
