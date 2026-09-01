@@ -4,6 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}Mapa Político 2026{% endblock %}</title>
+  <meta name="description" content="{% block description %}Teste de posicionamento político pra Presidente, Governador e Senador do RS em 2026. Sem rótulo de esquerda x direita e sem recomendar voto.{% endblock %}">
+
+  {% set og_image = request.url_root ~ 'static/img/og-image.png' %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mapa Político 2026">
+  <meta property="og:url" content="{{ request.url }}">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ self.title() }}">
+  <meta name="twitter:description" content="{{ self.description() }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
 </head>
