@@ -4,6 +4,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template, request
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 from engine.scoring import calcular_perfil, calcular_macros, MACRO_LABELS, MACROS
 from engine.compatibility import (
@@ -18,6 +19,10 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 
 app = Flask(__name__)
+# Render (e outros PaaS) terminam o HTTPS num proxy e repassam pro gunicorn em HTTP puro.
+# Sem isso, request.url/request.url_root ficam "http://" mesmo em produção, quebrando
+# tags como og:image que precisam bater com o esquema real (https) da página.
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 
 def _carregar_json(nome):
