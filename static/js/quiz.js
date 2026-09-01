@@ -78,7 +78,8 @@
         const cargo = state.cargosMeta[cid];
         const ativo = state.cargosSelecionados.includes(cid);
         return `
-        <button type="button" class="opcao ${ativo ? "selected" : ""}" data-cargo="${cid}">
+        <button type="button" class="opcao opcao-cargo ${ativo ? "selected" : ""}" data-cargo="${cid}">
+          <span class="opcao-check">${ativo ? "✅" : "⬜"}</span>
           ${CARGO_ICONES[cid] || "🗳️"} ${escapeHtml(cargo.nome)}
         </button>`;
       })
@@ -89,7 +90,8 @@
         <span class="q-tema-tag">🗳️ Antes de começar</span>
         <p class="q-texto">Pra quais eleições você quer ver seu ranking de compatibilidade?</p>
         <p style="color:var(--text-muted);margin-top:-16px;margin-bottom:22px;font-size:0.9rem">
-          Você responde o teste uma única vez — as mesmas respostas valem pra todas as eleições marcadas.
+          As 3 eleições já vêm marcadas ✅ — clique numa delas se quiser <strong>tirar</strong> ela da comparação.
+          Você responde o teste uma única vez e as mesmas respostas valem pra todas as que ficarem marcadas.
         </p>
         <div class="opcoes" id="lista-cargos">${itensHtml}</div>
         <div class="q-actions" style="justify-content:flex-end">
@@ -104,7 +106,8 @@
         const idx = state.cargosSelecionados.indexOf(cid);
         if (idx >= 0) state.cargosSelecionados.splice(idx, 1);
         else state.cargosSelecionados.push(cid);
-        btn.classList.toggle("selected");
+        const agoraAtivo = btn.classList.toggle("selected");
+        btn.querySelector(".opcao-check").textContent = agoraAtivo ? "✅" : "⬜";
         btnComecar.disabled = state.cargosSelecionados.length === 0;
       });
     });

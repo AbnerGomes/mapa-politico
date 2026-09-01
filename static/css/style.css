@@ -194,6 +194,12 @@ a { color: inherit; }
   background: color-mix(in srgb, var(--purple) 10%, var(--card));
   font-weight: 600;
 }
+.opcao-cargo { display: flex; align-items: center; gap: 10px; }
+.opcao-cargo .opcao-check { font-size: 1.05rem; line-height: 1; }
+.opcao-cargo:not(.selected) {
+  opacity: 0.55;
+  background: transparent;
+}
 .outros-box { margin-top: 4px; }
 .outros-box textarea {
   width: 100%;
